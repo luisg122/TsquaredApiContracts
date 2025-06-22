@@ -18,6 +18,7 @@ service TsquaredService {
     rpc DeleteAnswer() returns (google.protobuf.empty);
     rpc FlagAnswer() returns (google.protobuf.empty);
     rpc ListAnswers() returns ();
+    rpc SaveAnswerDraft() returns ();
 
     rpc CreateComment() returns();
     rpc GetComment() returns();
@@ -32,16 +33,18 @@ service TsquaredService {
     rpc DeleteBlog() returns (google.protobuf.empty);
     rpc FlagBlog() returns (google.protobuf.empty);
     rpc ListBlog() returns ();
+    rpc SaveBlogDraft() returns ();
 
     rpc Like() returns ();
     rpc Dislike() returns ();
     rpc UndoInteraction() returns ();
     rpc IncrementViewCount() returns ();
-
     rpc Bookmark() returns ();
     rpc Unbookmark() returns ();
+    rpc Repost() returns ();
 
     rpc FollowUser() returns ();
+    rpc ReportUser() returns ();
     rpc UnfollowUser() returns ();
     rpc ListFollowers() returns ();
 
