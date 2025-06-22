@@ -1,0 +1,53 @@
+syntax = "proto3"
+
+option java_multiple_files = true;
+option java_package = "com.tsquared.api.contracts.tsquared";
+option java_outer_classname = "TsquaredServiceProto";
+
+service TsquaredService {
+    rpc CreatePost() returns();
+    rpc GetPost() returns();
+    rpc UpdatePost() returns ();
+    rpc DeletePost() returns (google.protobuf.empty);
+    rpc FlagPost() returns (google.protobuf.empty);
+    rpc ListPosts() returns ();
+
+    rpc CreateAnswer() returns();
+    rpc GetAnswer() returns();
+    rpc UpdateAnswer() returns ();
+    rpc DeleteAnswer() returns (google.protobuf.empty);
+    rpc FlagAnswer() returns (google.protobuf.empty);
+    rpc ListAnswers() returns ();
+
+    rpc CreateComment() returns();
+    rpc GetComment() returns();
+    rpc UpdateComment() returns ();
+    rpc DeleteComment() returns (google.protobuf.empty);
+    rpc FlagComment() returns (google.protobuf.empty);
+    rpc ListComments() returns ();
+
+    rpc CreateBlog() returns();
+    rpc GetBlog() returns();
+    rpc UpdateBlog() returns ();
+    rpc DeleteBlog() returns (google.protobuf.empty);
+    rpc FlagBlog() returns (google.protobuf.empty);
+    rpc ListBlog() returns ();
+
+    rpc Like() returns ();
+    rpc Dislike() returns ();
+    rpc UndoInteraction() returns ();
+
+    rpc Bookmark() returns ();
+    rpc Unbookmark() returns ();
+
+    rpc FollowUser() returns ();
+    rpc UnfollowUser() returns ();
+    rpc ListFollowers() returns ();
+
+    rpc CreateAccount() returns();
+    rpc UpdateAccount() returns();
+    rpc DeleteAccount() returns();
+    rpc PauseAccount() returns();
+    rpc LoginAccount() returns ();
+    rpc LogoutAccount() returns ();
+}
