@@ -36,6 +36,7 @@ service TsquaredService {
     rpc Like() returns ();
     rpc Dislike() returns ();
     rpc UndoInteraction() returns ();
+    rpc IncrementViewCount() returns ();
 
     rpc Bookmark() returns ();
     rpc Unbookmark() returns ();
